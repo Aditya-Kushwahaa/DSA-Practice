@@ -1,0 +1,43 @@
+#include <iostream>
+using namespace std;
+
+bool isPalindrome(string s){
+    int i=0;
+    int j=s.size()-1;
+    while(i<j){
+        if(s[i]==s[j]){
+            i++;
+            j--;
+        }
+        else{
+            return false;
+        }
+    }
+    return true;
+}
+int main() 
+{
+    cout<<isPalindrome("tplnolt");
+    return 0;
+}
+************************************************************************************************
+
+#include <iostream>
+using namespace std;
+
+void reverse(string s){
+    cout<<"before "<<s<<endl;
+    int i=0;
+    int j=s.size()-1;
+    while(i<j){
+        swap(s[i],s[j]);
+        i++;
+        j--;
+    }
+     cout<<"after "<<s<<endl;
+}
+int main() 
+{
+    reverse("tplnolt");
+    return 0;
+}
