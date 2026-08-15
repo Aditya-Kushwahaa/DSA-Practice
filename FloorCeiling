@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int floor(int arr[],int x,int n){
+    int floor_of_x=-1;
+    for(int i=0;i<n;i++){
+        if(arr[i]<=x){
+            floor_of_x=arr[i];
+        }
+        else{
+            break;
+        }
+    }
+    return floor_of_x;
+}
+int ceil(int arr[],int x,int n){
+    int ceil_of_x=-1;
+    for(int i=n-1;i>=0;i--){
+        if(arr[i]>=x){
+            ceil_of_x=arr[i];
+        }
+        else{
+            break;
+        }
+    }
+    return ceil_of_x;
+}
+int main() {
+    int arr[]={2,4,7,9,10,11,13,14};
+    int n=sizeof(arr)/sizeof(arr[0]);
+    cout<<floor(arr,17,n)<<endl;
+    cout<<ceil(arr,17,n);
+}
