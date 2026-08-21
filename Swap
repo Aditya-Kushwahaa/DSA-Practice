@@ -1,0 +1,10 @@
+print("ENTER THE FIRST NUMBER :")
+a = int(input()) # a=7
+print("ENTER THE SECOND NUMBER :")
+b = int(input()) # b=5
+c = int(0) # c=0
+c = a # c=7
+a = b # a=5
+b = c # b=7
+print("AFTER SWAPPING THE FIRST NUMBER IS :", a)
+print("AFTER SWAPPING THE SECOND NUMBER IS :", b)
