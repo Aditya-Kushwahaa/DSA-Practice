@@ -1,0 +1,31 @@
+import pyttsx3
+engine = pyttsx3.init()
+print("     Calcutor        ")
+print("Select operation and input the number assigned.")
+print("1. Addition")
+print("2. Subtraction")
+print("3. Multiplication")
+print("4. Division")
+o = int(input("Enter operation number :"))
+a = int(input("Enter the first number :") )
+b = int(input("Enter the second number :") )
+if o == 1:
+    c = a + b
+    print ("The sum of the given two numbers is :", c)
+    engine.say ("The sum of the given two numbers is :"+ str(c))
+elif o == 2:
+    c = a - b
+    print ("The difference of the given two numbers is :", c)
+    engine.say ("The difference of the given two numbers is :"+ str(c))
+elif o == 3:
+     c = a * b
+     print ("The product of the given two numbers is :", c)
+     engine.say ("The product of the given two numbers is :"+ str(c))
+elif o == 4:
+        c = a / b
+        print ("The quotient of the given two numbers is :", c)
+        engine.say ("The quotient of the given two numbers is :"+ str(c))
+else:
+    print("Invalid operation number")
+    engine.say("Invalid operation number")
+engine.runAndWait()    
