@@ -1,0 +1,6 @@
+print ("HELLO !!")
+import math
+print ("ENTER THE RADIUS OF CIRCLE")
+r = float(input())
+area = math.pi * r * r
+print ("AREA OF CIRCLE IS : ", area)
