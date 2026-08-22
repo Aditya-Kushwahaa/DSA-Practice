@@ -1,0 +1,9 @@
+print ("ENTER THE NUMBER TO BE CHECKED :")
+n = int(input())
+if n > 0:
+    print ("THE NUMBER IS POSITIVE !")
+elif n == 0:
+    print ("THE NUMBER IS ZERO !") 
+else : 
+    print ("THE NUMBER IS NEGATIVE !")
+    
