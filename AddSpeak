@@ -1,0 +1,8 @@
+import pyttsx3
+engine = pyttsx3.init()
+a = int(input("Enter the first number :") )
+b = int(input("Enter the second number :") )
+c = a + b
+print ("The sum of the given two numbers is :", c)
+engine.say("The sum of the given two numbers is :" + str(c))
+engine.runAndWait()
