@@ -1,0 +1,3 @@
+a = eval(input("ENTER A NUMBER : "))
+if a > 100:
+    print ("THE NUMBER IS GREATER THAN 100 !!!!!")
