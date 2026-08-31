@@ -1,0 +1,14 @@
+print ("ENTER THE NUMBER OF TERMS :")
+n = int(input())
+a = 0
+b = 1
+next = 0
+print ("FIBONACCI SERIES :")
+for i in range(0,n):
+    if(i<=1):
+        next = i
+    else:
+        next = a + b
+        a = b
+        b = next
+    print (next)
