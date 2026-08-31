@@ -1,0 +1,6 @@
+print ("ENTER THE NUMBER OF TERMS TILL CHECKING :")
+n = int(input())
+print ("EVEN NUMBERS :")
+for i in range(0,n):
+    if(i%2==0):
+        print (i)
