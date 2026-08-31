@@ -1,0 +1,16 @@
+import pyttsx3
+engine = pyttsx3.init()
+# engine.runAndWait() no need to run this here
+a = int(input("Enter the first number :") )
+b = int(input("Enter the second number :") )
+if a>b:
+    engine.say("The first number is greater than second number")
+    print ("The first number is greater than second number")
+elif a<b:
+    engine.say("The second number is greater than first number")
+    print ("The second number is greater than first number")
+else:
+   # print ("Both numbers are equal")
+    engine.say("Both numbers are equal")
+    print ("Both numbers are equal")
+engine.runAndWait()
