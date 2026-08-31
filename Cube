@@ -1,0 +1,4 @@
+print ("ENTER THE NUMBER !!")
+n = int(input())
+cube = n*n*n
+print ("THE CUBE OF THE INPUT NUMBER IS :",cube)
